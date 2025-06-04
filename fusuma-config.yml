@@ -1,0 +1,37 @@
+# ~/.config/fusuma/config.yml
+
+# Tap gesture configuration for media controls
+tap:
+  3:
+    command: "xdotool key XF86AudioPlay"  # Three-finger tap for play/pause
+  4:
+    command: "xdotool key XF86AudioMute"  # Four-finger tap for mute toggle
+
+# Swipe gestures for volume control
+swipe:
+  3:
+    up:
+      command: "xdotool key XF86AudioRaiseVolume"  # Three-finger swipe up for volume up
+    down:
+      command: "xdotool key XF86AudioLowerVolume"  # Three-finger swipe down for volume down
+    left:
+      command: "xdotool key XF86AudioPrev"  # Three-finger swipe left for previous track
+    right:
+      command: "xdotool key XF86AudioNext"  # Three-finger swipe right for next track
+
+# Sensitivity and timing configuration
+threshold:
+  swipe: 0.4
+  tap: 0.1
+
+interval:
+  swipe: 0.8
+  tap: 0.1
+
+# Plugin configuration for tap support
+plugin:
+  inputs:
+    libinput_command_input:
+      enable-tap: true
+      verbose: true
+
