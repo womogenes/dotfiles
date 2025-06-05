@@ -11,21 +11,21 @@ tap:
 swipe:
   3:
     up:
-      command: "xdotool key XF86AudioRaiseVolume"  # Three-finger swipe up for volume up
+      command: "pactl set-sink-volume 0 +1%"  # Three-finger swipe up for volume up
     down:
-      command: "xdotool key XF86AudioLowerVolume"  # Three-finger swipe down for volume down
+      command: "pactl set-sink-volume 0 -1%"  # Three-finger swipe down for volume down
     left:
-      command: "xdotool key XF86AudioPrev"  # Three-finger swipe left for previous track
+#      command: "xdotool key XF86AudioPrev"  # Three-finger swipe left for previous track
     right:
-      command: "xdotool key XF86AudioNext"  # Three-finger swipe right for next track
+#      command: "xdotool key XF86AudioNext"  # Three-finger swipe right for next track
 
 # Sensitivity and timing configuration
 threshold:
-  swipe: 0.4
+  swipe: 0
   tap: 0.1
 
 interval:
-  swipe: 0.8
+  swipe: 0
   tap: 0.1
 
 # Plugin configuration for tap support
