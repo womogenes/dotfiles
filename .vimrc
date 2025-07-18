@@ -15,3 +15,5 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+" Treat four spaces as a tab
+set tabstop=8 softtabstop=0
